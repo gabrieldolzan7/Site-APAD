@@ -1,0 +1,92 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: rgb(128, 27, 57);
+    color: #fff;
+    text-align: center;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 100px;
+    
+}
+
+/* Menu de Navegação */
+.menu-navegacao {
+    background-color: rgb(254, 192, 5);
+    color: #fff;
+    text-align: left; /* Alinhe o texto à esquerda */
+    padding: 1px;
+}
+
+.menu-navegacao ul {
+    list-style: none;
+    padding: px;
+}
+
+.menu-navegacao li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu-navegacao a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Seção de Introdução */
+#intro {
+    text-align: center;
+    padding: 20px;
+}
+
+.intro-content {
+    display: flex;
+    flex-direction: row; /* Alinhe os elementos lado a lado */
+    align-items: center;
+    justify-content: space-around; /* Distribua igualmente o espaço entre os elementos */
+}
+
+.intro-content img {
+    max-width: 50%;
+}
+
+.intro-text {
+    max-width: 45%;
+    text-align: left; /* Alinhe o texto à esquerda */
+    margin: 0;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.redes-sociais {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.redes-sociais li {
+    margin-right: 10px;
+}
+
+.redes-sociais img {
+    max-width: 30px;
+}
