@@ -1,49 +1,80 @@
-/* Estilos gerais */
-body {
-    font-family: Arial, sans-serif;
+@font-face {
+    font-family: 'texto';
+    src: url('Fontes/Texto/Poppins-Regular.ttf') format('opentype');
+}
+body {  
     margin: 0;
     padding: 0;
+    font-family: texto;
 }
 
 /* Cabeçalho */
 header {
-    background-color: rgb(128, 27, 57);
-    color: #fff;
-    text-align: center;
-    padding: 0px;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    padding: 10px 20px;
+    color: #fff; /* Cor do texto no cabeçalho */
+    background-image: linear-gradient(to right, #982649, #AE4147, #C76548);
 }
 
 .logo img {
-    max-width: 100px;
-    
+    max-width: 100px; /* Tamanho máximo da imagem do logo */
 }
 
-/* Menu de Navegação */
-.menu-navegacao {
-    background-color: rgb(254, 192, 5);
-    color: #fff;
-    text-align: left; /* Alinhe o texto à esquerda */
-    padding: 1px;
+.titulo {
+    text-align: center;
 }
 
-.menu-navegacao ul {
+.titulo h1 {
+    font-size: 80px;
+    margin: 0;
+    font-family: 'titulo';
+    margin-top: 10px;
+}
+
+.titulo p {
+    font-size: 16px;
+    margin: 0;
+    font-weight:600;
+}
+
+.botoes button {
+    background-color: rgb(247, 187, 10); /* Cor de fundo dos botões */
+    color: #fff; /* Cor do texto nos botões */
+    padding: 10px 20px;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+/* Estilo para o menu de navegação */
+nav {
+    background-color: rgb(247, 187, 10);
+}
+
+ul {
     list-style: none;
-    padding: px;
-}
-
-.menu-navegacao li {
-    display: inline;
-    margin-right: 20px;
-}
-
-.menu-navegacao a {
-    text-decoration: none;
-    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
     font-weight: bold;
 }
+
+ul li {
+    margin: 0;
+    padding: 0;
+}
+
+ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff; /* Cor do texto no menu */
+    text-decoration: none;
+}
+
 
 /* Seção de Introdução */
 #intro {
@@ -67,6 +98,24 @@ header {
     text-align: left; /* Alinhe o texto à esquerda */
     margin: 0;
 }
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    max-width: 100%;
+    position: relative;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel img:not(:first-child) {
+    transform: translateX(100%);
+}
+
 
 /* Rodapé */
 footer {
