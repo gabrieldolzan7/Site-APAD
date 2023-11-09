@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>APAD</title>
 </head>
 <body>
@@ -32,12 +32,47 @@
     <main>
         <section id="intro">
             <div class="intro-content">
-                <img src="animal.jpg" alt="Animal de Rua">
                 <div class="intro-text">
                     <h1>Por que adotar um animal de rua?</h1>
                     <p>Adotar um animal de rua é uma ação de amor e compaixão. Nossos amigos peludos estão ansiosos para encontrar um lar amoroso. Ao adotar, você não apenas dá uma segunda chance a um animal, mas também enche sua vida de alegria e gratidão. Junte-se a nós e faça a diferença na vida de um animal de rua.</p>
                 </div>
-            </div>
+                <div class="slider">
+
+                 <div class="slides">
+
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+
+                    <div class="slide first">
+                        <img src="Imagens/teste2.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="Imagens/teste3.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="Imagens/teste4.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="Imagens/teste3.jpg" alt="">
+                    </div>
+
+                    <div class="navegation-auto">
+                          <div class="auto-btn1"></div>
+                          <div class="auto-btn2"></div>
+                          <div class="auto-btn3"></div>
+                          <div class="auto-btn4"></div>
+                    </div>
+
+                 </div>
+                    <div class="manual-navegation">
+                      <label for="radio1" class="manual-btn"></label>
+                      <label for="radio2" class="manual-btn"></label>
+                      <label for="radio3" class="manual-btn"></label>
+                      <label for="radio4" class="manual-btn"></label>
+                    </div>
+                </div>
         </section>
     </main>
 

@@ -89,9 +89,6 @@ ul li a {
     justify-content: space-around; /* Distribua igualmente o espaço entre os elementos */
 }
 
-.intro-content img {
-    max-width: 50%;
-}
 
 .intro-text {
     max-width: 45%;
@@ -99,25 +96,105 @@ ul li a {
     margin: 0;
 }
 
-.carousel {
-    display: flex;
+.slider{
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
     overflow: hidden;
-    max-width: 100%;
+}
+
+.slides{
+   width: 400%;
+   height: 400px;
+   display: flex; 
+}
+ .slides input{
+    display: none;
+ }
+
+ .slide{
+    width: 25%;
     position: relative;
+    transition: 2s;
+ }
+
+ .slide img{
+    width: 300px;
+ }
+
+ .manual-navegation{
+    position: absolute;
+    width: 300px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: left;
+ }
+
+.manual-btn{
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
 }
 
-.carousel img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.5s ease-in-out;
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background-color: rgb(247, 187, 10);
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
 }
 
-.carousel img:not(:first-child) {
-    transform: translateX(100%);
+#radio2:checked ~ .first{
+    margin-left: -25%;
 }
 
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
 
-/* Rodapé */
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+.navegation-auto div{
+    border: 2px solid red;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navegation-auto{
+    position: absolute;
+    width: 169,3px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navegation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navegation-auto .auto-btn1{
+    background-color: rgb(247, 187, 10);;
+}
+
+#radio2:checked ~ .navegation-auto .auto-btn2{
+    background-color: rgb(247, 187, 10);;
+}
+
+#radio3:checked ~ .navegation-auto .auto-btn3{
+    background-color: rgb(247, 187, 10);;
+}
+
+#radio4:checked ~ .navegation-auto .auto-btn4{
+    background-color: rgb(247, 187, 10);;
+}
 footer {
     background-color: #333;
     color: #fff;
