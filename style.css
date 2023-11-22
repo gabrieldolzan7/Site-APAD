@@ -54,6 +54,7 @@ header {
 /* Adicione a seguinte regra para tornar o título responsivo */
 .titulo {
     text-align: center;
+    padding-left: 175px;
 }
 
 .titulo h1 {
@@ -340,7 +341,41 @@ ul li a:hover{
     background-color: rgb(247, 187, 10);
 }
 
+.quero-adotar {
+    position: relative;
+    background-color: rgb(247, 10, 10); /* Cor de fundo dos botões */
+    color: #fff; /* Cor do texto nos botões */
+    padding: 10px 20px;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none; /* Remova o sublinhado do link */
+    display: inline-block; /* Adicione essa propriedade para manter o botão em linha com o texto */
+    border-radius: 20px;
+}
 
+.quero-adotar::before {
+    content: '\2764'; /* Código Unicode do símbolo de coração */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: transparent; /* Inicialmente, o coração é transparente */
+    font-size: 30px; /* Tamanho do coração */
+    opacity: 0; /* Inicialmente, o coração está totalmente transparente */
+    transition: opacity 0.5s, color 0.5s; /* Adiciona uma transição suave para a cor e opacidade */
+}
+
+.quero-adotar:hover {
+    color: transparent; /* Quando o mouse passa sobre o botão, o texto fica transparente */
+}
+
+.quero-adotar:hover::before {
+    color: #fff; /* Quando o mouse passa sobre o botão, o coração fica visível */
+    opacity: 1; /* Quando o mouse passa sobre o botão, o coração torna-se totalmente visível */
+}
 
 footer {
     background-color: #333;
