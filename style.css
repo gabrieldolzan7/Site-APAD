@@ -44,10 +44,13 @@ header {
     padding: 10px 20px;
     color: #fff; /* Cor do texto no cabeçalho */
     background-image: linear-gradient(to right, #982649, #AE4147, #C76548);
+    margin-top: -20px;
+    margin-bottom: -10px;
 }
 
 .logo img {
-    max-width: 100%; /* Tornar a imagem do logo responsiva */
+    max-width: 80%; /* Tornar a imagem do logo responsiva */
+    margin-top: 15px;
     height: auto;
 }
 
@@ -87,6 +90,7 @@ header {
     font-weight: bold;
     font-size: 16px;
     position: relative;
+    margin-top: 20px;
 }
 
 .botao-criar-conta {
@@ -193,6 +197,7 @@ header {
 
 nav {
     background-color: rgb(247, 187, 10);
+    height: 33px;
 }
 
 ul {
@@ -207,6 +212,7 @@ ul {
 ul li {
     margin: 0;
     padding: 0;
+    margin-top: -6px;
 }
 
 ul li a {
@@ -220,7 +226,11 @@ ul li a:hover{
     font-size: 105%;
     color: rgb(189, 64, 102);
 }
-/* Seção de Introdução */
+
+.titulo-intro{
+    overflow: hidden;
+}
+
 #intro {
     text-align: center;
     padding: 20px;
@@ -343,17 +353,17 @@ ul li a:hover{
 
 .quero-adotar {
     position: relative;
-    background-color: rgb(247, 10, 10); /* Cor de fundo dos botões */
+    background-color: rgb(247, 187, 10); /* Cor de fundo dos botões */
     color: #fff; /* Cor do texto nos botões */
-    padding: 10px 20px;
+    padding: 12px 25px;
     border: none;
     margin-left: 10px;
+    margin-top: 10px;
     cursor: pointer;
     font-weight: bold;
     font-size: 20px;
     text-decoration: none; /* Remova o sublinhado do link */
     display: inline-block; /* Adicione essa propriedade para manter o botão em linha com o texto */
-    border-radius: 20px;
 }
 
 .quero-adotar::before {
@@ -370,6 +380,9 @@ ul li a:hover{
 
 .quero-adotar:hover {
     color: transparent; /* Quando o mouse passa sobre o botão, o texto fica transparente */
+    background-color: red;
+    font-size: 130%;
+    border-radius: 30px;
 }
 
 .quero-adotar:hover::before {
@@ -377,11 +390,46 @@ ul li a:hover{
     opacity: 1; /* Quando o mouse passa sobre o botão, o coração torna-se totalmente visível */
 }
 
+/* Seção de Introdução */
+#intro {
+    text-align: center;
+    padding: 20px;
+}
+
+.intro-content {
+    display: flex;
+    flex-direction: column; /* Alterado para empilhar os elementos em telas menores */
+    align-items: center;
+}
+
+.intro-text {
+    max-width: 800px; /* Ajuste a largura máxima conforme necessário */
+    text-align: left;
+    margin: 20px auto; /* Centralize o texto horizontalmente */
+    position: relative;
+    padding: 20px;
+    border: 2px solid rgb(128, 27, 57);
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.9); /* Cor de fundo da caixa de texto */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.titulo-texto {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 3px; /* tamanho da altura de cada linha */
+    letter-spacing: 1px; /* tamanho do espaço entre cada letra */
+    word-spacing: 4px; /* tamanho do espaço entre cada palavra */
+    text-align: center;/* tamanho da margem da primeira linha do texto */
+}
+
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 10px;
+
 }
 
 .redes-sociais {
