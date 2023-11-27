@@ -34,7 +34,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: texto;
-    background-image: url("#");
+    background-image: url(Imagens/fundo-site3.xcf);
     background-size: cover; /* Ajusta o tamanho da imagem para cobrir toda a tela */
     background-position: center; /* Centraliza a imagem no meio da tela */
 }
@@ -426,6 +426,10 @@ ul li a:hover{
     letter-spacing: 1px; /* tamanho do espaço entre cada letra */
     word-spacing: 4px; /* tamanho do espaço entre cada palavra */
     text-align: center;/* tamanho da margem da primeira linha do texto */
+}
+
+aside{
+   
 }
 
 footer {
