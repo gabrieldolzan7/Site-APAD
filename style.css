@@ -428,29 +428,132 @@ ul li a:hover{
     text-align: center;/* tamanho da margem da primeira linha do texto */
 }
 
-aside{
-   
-}
 
-footer {
-    background-color: #333;
+/* Estilos para o Footer inspirado no think32.com.au */
+#footer-inspired {
+    background-image: linear-gradient(to top, #982649, #AE4147, #C76548);
     color: #fff;
-    text-align: center;
-    padding: 10px;
-
+    padding: 40px 0;
 }
 
-.redes-sociais {
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-section {
+    max-width: 300px;
+}
+
+.footer-section h3 {
+    font-size: 1.5em;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+.footer-section a:hover{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.social-icons {
     list-style: none;
     padding: 0;
     display: flex;
-    justify-content: center;
 }
-
-.redes-sociais li {
+.social-icons a:hover {
+   color: #ffffff;
+font-size: 1.7em;
+}
+.social-icons li {
     margin-right: 10px;
 }
 
-.redes-sociais img {
-    max-width: 30px;
+.social-icons a {
+    color: #fff;
+    font-size: 1.5em;
 }
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #fff;
+}
+
+
+/*Página de adoção*/
+
+/* Adicione o CSS para a grade de adoção */
+#adoption {
+    text-align: center;
+    padding: 20px;
+}
+
+.adoption-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Adoção - Estilo das divisões e botão de adotar */
+.adoption-item {
+    box-sizing: border-box; /* Inclui a borda no cálculo do tamanho total */
+    width: calc(33.3333% - 20px); /* 33.3333% do width total, subtraindo a margem */
+    margin: 10px; /* Espaçamento entre as caixas */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block; /* Permite o alinhamento lado a lado */
+    vertical-align: top; /* Alinha no topo */
+}
+
+.adoption-item button {
+    background-color: rgb(128, 27, 57);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.adoption-item button:hover {
+    background-color: rgb(131, 47, 72);
+}
+
+@media only screen and (max-width: 767px) {
+    .adoption-item {
+        width: 100%; /* Em telas menores, ocupa a largura total */
+    }
+}
+
+.adoption-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.adoption-item h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.adoption-item p {
+    color: #555;
+    font-size: 16px;
+}
+
+/* Adicione o restante do seu CSS */
