@@ -496,6 +496,13 @@ font-size: 1.7em;
 /*Página de adoção*/
 
 /* Adicione o CSS para a grade de adoção */
+
+.adocao-titulo{
+    font-size: 30px;
+    color: rgb(247, 187, 10);
+    letter-spacing: 1px;
+}
+
 #adoption {
     text-align: center;
     padding: 20px;
@@ -512,26 +519,29 @@ font-size: 1.7em;
     box-sizing: border-box; /* Inclui a borda no cálculo do tamanho total */
     width: calc(33.3333% - 20px); /* 33.3333% do width total, subtraindo a margem */
     margin: 10px; /* Espaçamento entre as caixas */
-    border: 1px solid #ddd;
+    border: 1px solid rgb(229, 196, 207);
     border-radius: 10px;
     padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: inline-block; /* Permite o alinhamento lado a lado */
     vertical-align: top; /* Alinha no topo */
+    background-color: rgba(247, 188, 10, 0.067);
 }
 
 .adoption-item button {
-    background-color: rgb(128, 27, 57);
+    background-color: rgb(247, 187, 10);
     color: white;
-    padding: 10px 15px;
+    padding: 10px 40px;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
     transition: background-color 0.3s;
+    font-weight: bold;
+    font-size: 17px;
 }
 
 .adoption-item button:hover {
-    background-color: rgb(131, 47, 72);
+    background-color: rgb(249, 201, 55);
 }
 
 @media only screen and (max-width: 767px) {
@@ -556,4 +566,4 @@ font-size: 1.7em;
     font-size: 16px;
 }
 
-/* Adicione o restante do seu CSS */
+
