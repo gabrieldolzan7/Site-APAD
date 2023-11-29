@@ -566,4 +566,65 @@ font-size: 1.7em;
     font-size: 16px;
 }
 
+/* Criar Conta */
+.center-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
 
+.conta-titulo{
+    font-size: 35px;
+}
+/* Style for the registration box */
+.registration-box {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    background-image: linear-gradient(to bottom, #982649, #AE4147, #C76548);
+}
+
+.registration-box h2 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
+.registration-box form {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.registration-box label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.registration-box input {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.registration-box button {
+    background-color: rgb(247, 187, 10);
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 35px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    font-size: 20px;
+}
+
+.registration-box button:hover {
+    background-color: rgb(247, 196, 42);
+}
