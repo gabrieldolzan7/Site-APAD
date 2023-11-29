@@ -96,13 +96,13 @@ header {
     margin-top: 20px;
 }
 
-.botao-criar-conta {
+.botao-voluntario {
     color: #FFF;
     transition: all 0.5s;
     position: relative;
     border-radius: 20px;
   }
-  .botao-criar-conta::before {
+  .botao-voluntario::before {
     content: '';
     position: absolute;
     top: 0;
@@ -112,11 +112,11 @@ header {
     z-index: 1;
     transition: all 0.5s;
   }
-  .botao-criar-conta:hover::before {
+  .botao-voluntario:hover::before {
     opacity: 0 ;
     transform: scale(0.5,0.5);
   }
-  .botao-criar-conta::after {
+  .botao-voluntario::after {
     content: '\f2be';
     position: absolute;
     top: 0;
@@ -133,7 +133,7 @@ header {
     align-items: center;
     justify-content: center;
   }
-  .botao-criar-conta:hover::after {
+  .botao-voluntario:hover::after {
     opacity: 1;
     transform: scale(1,1);
     background-color: rgb(247, 187, 10);
@@ -566,7 +566,7 @@ font-size: 1.7em;
     font-size: 16px;
 }
 
-/* Criar Conta */
+/* Voluntariado */
 .center-box {
     display: flex;
     justify-content: center;
@@ -584,37 +584,36 @@ font-size: 1.7em;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 15px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    background-image: linear-gradient(to bottom, #982649, #AE4147, #C76548);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.528);
 }
 
 .registration-box h2 {
     text-align: center;
-    color: rgb(255, 255, 255);
-    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
 }
 
 .registration-box form {
     display: flex;
     flex-direction: column;
-    color: white;
+    color: black;
+    text-align: left;
 }
 
 .registration-box label {
-    margin-top: 10px;
     font-weight: bold;
+    margin-top: 20px;
 }
 
 .registration-box input {
     padding: 8px;
     margin-top: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #000000;
     border-radius: 5px;
 }
 
 .registration-box button {
     background-color: rgb(247, 187, 10);
-    color: #fff;
+    color: #ffffff;
     padding: 12px;
     border: none;
     border-radius: 20px;
@@ -628,3 +627,116 @@ font-size: 1.7em;
 .registration-box button:hover {
     background-color: rgb(247, 196, 42);
 }
+
+
+/*Ajuda Solidaria*/
+body{
+    margin-top: -10px;
+}
+.titulo-ajuda{
+    font-size: 90px;
+    margin: 0;
+    font-family: 'titulo';
+    margin-top: 10px;
+    letter-spacing: 5px;
+    text-align: center;
+    background-color: rgb(128, 27, 57);
+    color: white;
+}
+/* Estilos para a seção de Ajuda Solidária */
+#ajuda-solidaria {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(to bottom, #801B39, #AE4147, #C76548);
+}
+
+.ajuda-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.ajuda-text {
+    margin-bottom: 20px;
+}
+
+.redes-sociais {
+    margin-top: 20px;
+}
+
+.icones-redes-sociais a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+    color: #ffffff; /* Altere a cor conforme necessário */
+}
+
+.icones-redes-sociais a:hover {
+    color: rgb(255, 255, 255);
+    font-size: 1.6em;
+}
+
+/* Adicionando estilos para tornar a seção responsiva */
+@media only screen and (max-width: 767px) {
+    #ajuda-solidaria {
+        padding: 20px; /* Ajuste o preenchimento conforme necessário para telas menores */
+    }
+
+    .ajuda-container {
+        max-width: 100%; /* Ocupa toda a largura disponível em telas menores */
+    }
+
+    .ajuda-text {
+        margin-bottom: 10px; /* Ajuste a margem inferior conforme necessário em telas menores */
+    }
+
+    .redes-sociais {
+        margin-top: 10px; /* Ajuste a margem superior conforme necessário em telas menores */
+    }
+}
+
+
+/* Adicione este estilo para a caixa centralizada */
+/* Adicione este estilo para a caixa centralizada */
+#quero-adotar {
+    background-color: rgba(246, 246, 246, 0.9);
+    padding: 40px;
+    text-align: center;
+    color: #000;
+    display: flex;
+    flex-direction: column; /* Alterado para alinhar itens verticalmente */
+    align-items: center; /* Alinha os itens no centro horizontalmente */
+    justify-content: center; /* Alinha os itens no centro verticalmente */
+    height: 100vh; /* Ocupa 100% da altura da viewport */
+}
+
+.central-box {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.central-box p {
+    margin-bottom: 20px;
+}
+
+.icone-whatsapp {
+    font-size: 24px;
+    margin-right: 10px;
+    color: rgb(247, 187, 10);
+}
+
+.adoption-text {
+    border: 2px solid rgb(128, 27, 57);
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #801b3947;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Adicione este estilo para o ícone do WhatsApp e o número de telefone */
+.whatsapp-info {
+    display: flex;
+    align-items: center;
+}
+
