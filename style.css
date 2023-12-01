@@ -6,7 +6,15 @@
     font-family: 'titulo';
     src: url(Fontes/Titulo/PatuaOne-Regular.ttf) format('opentype');
 } 
-
+.body-principal{
+    margin: 0;
+    padding: 0;
+    font-family: texto;
+    background-image: url(Imagens/fundo-site4.png);
+    background-size: 200px 200px; /* Ajusta o tamanho da imagem para cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem no meio da tela */
+    background-position-x: center;
+}
 @media only screen and (max-width: 767px) {
     .intro-content {
         flex-direction: column; /* Empilhar os elementos em telas menores */
@@ -34,9 +42,6 @@ body {
     margin: 0;
     padding: 0;
     font-family: texto;
-    background-image: url(Imagens/fundo-site3.xcf);
-    background-size: cover; /* Ajusta o tamanho da imagem para cobrir toda a tela */
-    background-position: center; /* Centraliza a imagem no meio da tela */
 }
 
 /* Cabeçalho */
@@ -232,7 +237,8 @@ ul li a:hover{
 
 .titulo-intro{
     overflow: hidden;
-    
+    color: rgb(0, 0, 0);
+    background-color: white;
 }
 
 #intro {
@@ -250,6 +256,7 @@ ul li a:hover{
     max-width: 800px; /* Ajuste a largura máxima conforme necessário */
     text-align: left;
     margin: 20px auto; /* Centralize o texto horizontalmente */
+   
 }
 .slider {
     margin: 0 auto;
@@ -412,14 +419,15 @@ ul li a:hover{
     margin: 20px auto; /* Centralize o texto horizontalmente */
     position: relative;
     padding: 20px;
-    border: 2px solid rgb(128, 27, 57);
+    border: 2px solid rgb(204, 192, 192);
     border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.9); /* Cor de fundo da caixa de texto */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    background-image: linear-gradient(to bottom, #982649, #AE4147, #C76548);
+    color: white;
 }
 
 .titulo-texto {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 30px;
     font-weight: 900;
     line-height: 3px; /* tamanho da altura de cada linha */
@@ -585,6 +593,7 @@ font-size: 1.7em;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 15px;
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.528);
+
 }
 
 .registration-box h2 {
@@ -638,6 +647,7 @@ body{
     margin: 0;
     font-family: 'titulo';
     margin-top: 10px;
+    padding-top: 10px;
     letter-spacing: 5px;
     text-align: center;
     background-color: rgb(128, 27, 57);
