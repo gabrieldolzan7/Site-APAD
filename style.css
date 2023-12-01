@@ -6,11 +6,14 @@
     font-family: 'titulo';
     src: url(Fontes/Titulo/PatuaOne-Regular.ttf) format('opentype');
 } 
+
+/*Página Inicial*/
+
 .body-principal{
     margin: 0;
     padding: 0;
     font-family: texto;
-    background-image: url(Imagens/fundo-site4.png);
+    background-image: url(Imagens/fundo-sie4.png);
     background-size: 200px 200px; /* Ajusta o tamanho da imagem para cobrir toda a tela */
     background-position: center; /* Centraliza a imagem no meio da tela */
     background-position-x: center;
@@ -38,10 +41,11 @@
         justify-content: center; /* Ajuste para centralizar os botões em telas menores */
     }
 }
+
 body {  
     margin: 0;
     padding: 0;
-    font-family: texto;
+    font-family: 'texto';
 }
 
 /* Cabeçalho */
@@ -503,8 +507,6 @@ font-size: 1.7em;
 
 /*Página de adoção*/
 
-/* Adicione o CSS para a grade de adoção */
-
 .adocao-titulo{
     font-size: 30px;
     color: rgb(247, 187, 10);
@@ -575,6 +577,21 @@ font-size: 1.7em;
 }
 
 /* Voluntariado */
+#voluntarios{
+    background-image: linear-gradient(to bottom, #982649, #AE4147, #C76548);
+}
+
+.titulo-voluntarios{
+    font-size: 90px;
+    margin: 0;
+    font-family: 'titulo';
+    margin-top: 10px;
+    padding-top: 10px;
+    letter-spacing: 5px;
+    text-align: center;
+    background-color:#982649;
+    color: white;
+}
 .center-box {
     display: flex;
     justify-content: center;
@@ -582,9 +599,6 @@ font-size: 1.7em;
     height: 100vh; /* Full viewport height */
 }
 
-.conta-titulo{
-    font-size: 35px;
-}
 /* Style for the registration box */
 .registration-box {
     max-width: 400px;
@@ -650,16 +664,15 @@ body{
     padding-top: 10px;
     letter-spacing: 5px;
     text-align: center;
-    background-color: rgb(128, 27, 57);
+    background-color: #F7BB0A;
     color: white;
 }
 /* Estilos para a seção de Ajuda Solidária */
 #ajuda-solidaria {
-    background-color: rgba(255, 255, 255, 0.9);
     padding: 40px;
     text-align: center;
     color: white;
-    background-image: linear-gradient(to bottom, #801B39, #AE4147, #C76548);
+    background-image: linear-gradient(to bottom, #F7BB0A, #f5c32e, #f3cc56);
 }
 
 .ajuda-container {
@@ -687,6 +700,65 @@ body{
     font-size: 1.6em;
 }
 
+#footer-ajuda {
+    background-image: linear-gradient(to top, #F7BB0A, #f5c32e, #f3cc56);
+    color: #fff;
+    padding: 40px 0;
+}
+.footer-container-ajuda {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-section-ajuda {
+    max-width: 300px;
+}
+
+.footer-section-ajuda h3 {
+    font-size: 1.5em;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+}
+
+.footer-section-ajuda ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section-ajuda ul li {
+    margin-bottom: 10px;
+}
+.footer-section-ajuda a:hover{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+.social-icons a:hover {
+   color: #ffffff;
+font-size: 1.7em;
+}
+.social-icons li {
+    margin-right: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.footer-bottom-ajuda {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #fff;
+}
+
+
 /* Adicionando estilos para tornar a seção responsiva */
 @media only screen and (max-width: 767px) {
     #ajuda-solidaria {
@@ -710,17 +782,36 @@ body{
 /* Adicione este estilo para a caixa centralizada */
 /* Adicione este estilo para a caixa centralizada */
 #quero-adotar {
-    background-color: rgba(246, 246, 246, 0.9);
-    padding: 40px;
+    background-image: linear-gradient(to bottom, #982649, #AE4147, #C76548);
+    padding: 20px;
     text-align: center;
-    color: #000;
+    color: #ffffff;
     display: flex;
     flex-direction: column; /* Alterado para alinhar itens verticalmente */
     align-items: center; /* Alinha os itens no centro horizontalmente */
     justify-content: center; /* Alinha os itens no centro verticalmente */
     height: 100vh; /* Ocupa 100% da altura da viewport */
 }
-
+.titulo-adotar{
+        font-size: 90px;
+        margin: 0;
+        font-family: 'titulo';
+        margin-top: 10px;
+        padding-top: 10px;
+        letter-spacing: 5px;
+        text-align: center;
+        background-color:#982649;
+        color: white;
+    }
+    .adotar-container{
+        max-width: 800px;
+    margin: 0 auto;
+    }
+    .adotar-text{
+        margin-bottom: 20px;
+        font-family: 'texto';
+        font-size: 20px;
+    }
 .central-box {
     max-width: 800px;
     margin: 0 auto;
