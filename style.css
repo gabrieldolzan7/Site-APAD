@@ -1,51 +1,47 @@
+/* Fontes */
 @font-face {
     font-family: 'texto';
     src: url('Fontes/Texto/Poppins-Regular.ttf') format('opentype');
 }
-@font-face{
+
+@font-face {
     font-family: 'titulo';
-    src: url(Fontes/Titulo/PatuaOne-Regular.ttf) format('opentype');
-} 
-
-/*Página Inicial*/
-
-.body-principal{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: url(Imagens/fundo-sie4.png);
-    background-size: 200px 200px; /* Ajusta o tamanho da imagem para cobrir toda a tela */
-    background-position: center; /* Centraliza a imagem no meio da tela */
-    background-position-x: center;
-}
-@media only screen and (max-width: 767px) {
-    .intro-content {
-        flex-direction: column; /* Empilhar os elementos em telas menores */
-        align-items: center; /* Centralizar os elementos */
-    }
-
-    .intro-text {
-        max-width: 100%; /* Ocupar toda a largura em telas menores */
-        text-align: center; /* Ajuste para centralizar o texto em telas menores */
-        margin-top: 20px; /* Ajuste da margem superior em telas menores */
-        margin-bottom: 20px; /* Ajuste da margem inferior em telas menores */
-    }
-
-    .slider {
-        width: 100%; /* Ocupar toda a largura em telas menores */
-    }
-
-    .manual-navegation {
-        width: 100%; /* Ocupar toda a largura em telas menores */
-        margin-top: 20px; /* Ajuste da margem superior em telas menores */
-        justify-content: center; /* Ajuste para centralizar os botões em telas menores */
-    }
+    src: url('Fontes/Titulo/PatuaOne-Regular.ttf') format('opentype');
 }
 
-body {  
+/* Estilos globais */
+body {
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
+}
+
+/* Página Inicial */
+.body-principal {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: 200px 200px;
+    background-position: center;
+}
+
+@media only screen and (max-width: 767px) {
+    /* Estilos para telas menores */
+    .intro-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro-text {
+        max-width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .slider, .manual-navegation {
+        width: 100%;
+    }
 }
 
 /* Cabeçalho */
@@ -54,19 +50,18 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    color: #fff; /* Cor do texto no cabeçalho */
+    color: #fff;
     background-image: linear-gradient(to right, #982649, #AE4147, #C76548);
     margin-top: -20px;
     margin-bottom: -10px;
 }
 
 .logo img {
-    max-width: 80%; /* Tornar a imagem do logo responsiva */
+    max-width: 80%;
     margin-top: 15px;
     height: auto;
 }
 
-/* Adicione a seguinte regra para tornar o título responsivo */
 .titulo {
     text-align: center;
     padding-left: 175px;
@@ -93,8 +88,8 @@ header {
 }
 
 .botoes button {
-    background-color: rgb(247, 187, 10); /* Cor de fundo dos botões */
-    color: #fff; /* Cor do texto nos botões */
+    background-color: rgb(247, 187, 10);
+    color: #fff;
     padding: 10px 20px;
     border: none;
     margin-left: 10px;
@@ -105,13 +100,16 @@ header {
     margin-top: 20px;
 }
 
-.botao-voluntario {
+.botao-voluntario,
+.botao-adote {
     color: #FFF;
     transition: all 0.5s;
     position: relative;
     border-radius: 20px;
-  }
-  .botao-voluntario::before {
+}
+
+.botao-voluntario::before,
+.botao-adote::before {
     content: '';
     position: absolute;
     top: 0;
@@ -120,12 +118,16 @@ header {
     height: 100%;
     z-index: 1;
     transition: all 0.5s;
-  }
-  .botao-voluntario:hover::before {
-    opacity: 0 ;
-    transform: scale(0.5,0.5);
-  }
-  .botao-voluntario::after {
+}
+
+.botao-voluntario:hover::before,
+.botao-adote:hover::before {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+}
+
+.botao-voluntario::after,
+.botao-adote::after {
     content: '\f2be';
     position: absolute;
     top: 0;
@@ -135,78 +137,30 @@ header {
     z-index: 1;
     opacity: 0;
     transition: all 0.3s;
-    border: 1px solid rgba(255,255,255,0.5);
-    transform: scale(1.2,1.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transform: scale(1.2, 1.2);
     font-family: 'Font Awesome 5 Free';
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  .botao-voluntario:hover::after {
-    opacity: 1;
-    transform: scale(1,1);
-    background-color: rgb(247, 187, 10);
-    content: '\f2be'; /* Código Unicode do ícone de usuário do Font Awesome */
-    font-family: 'Font Awesome\ 5 Free'; /* Fonte do Font Awesome (deve ser carregada) */
-    font-size: 20px; /* Tamanho do ícone */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-  }
+}
 
-  .botao-adote {
-    color: #FFF;
-    transition: all 0.5s;
-    position: relative;
-    border-radius: 20px;
-  }
-  .botao-adote::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    transition: all 0.3s;
-  }
-  .botao-adote:hover::before {
-    opacity: 0 ;
-    transform: scale(0.5,0.5);
-  }
-  .botao-adote::after {
+.botao-voluntario:hover::after,
+.botao-adote:hover::after {
+    opacity: 1;
+    transform: scale(1, 1);
+    background-color: rgb(247, 187, 10);
     content: '\f2be';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    opacity: 0;
-    transition: all 0.3s;
-    border: 1px solid rgba(255,255,255,0.5);
-    transform: scale(1.2,1.2);
-    font-family: 'Font Awesome 5 Free';
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .botao-adote:hover::after {
-    opacity: 1;
-    transform: scale(1,1);
-    background-color: rgb(247, 187, 10);
-    content: '\f1b0'; /* Código Unicode do ícone de usuário do Font Awesome */
-    font-family: 'Font Awesome\ 5 Free'; /* Fonte do Font Awesome (deve ser carregada) */
-    font-size: 20px; /* Tamanho do ícone */
+    font-family: 'Font Awesome\ 5 Free';
+    font-size: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
-  }
+}
 
+/* Navegação */
 nav {
     background-color: rgb(247, 187, 10);
     height: 33px;
@@ -224,49 +178,26 @@ ul {
 ul li {
     margin: 0;
     padding: 0;
-    margin-top: -6px;
+    margin-top: -2px;
 }
 
 ul li a {
     display: block;
     padding: 10px 20px;
-    color: #fff; /* Cor do texto no menu */
+    color: #fff;
     text-decoration: none;
 }
 
-ul li a:hover{
+ul li a:hover {
     font-size: 105%;
     color: rgb(189, 64, 102);
 }
 
-.titulo-intro{
-    overflow: hidden;
-    color: rgb(0, 0, 0);
-    background-color: white;
-}
-
-#intro {
-    text-align: center;
-    padding: 20px;
-}
-
-.intro-content {
-    display: flex;
-    flex-direction: column; /* Alterado para empilhar os elementos em telas menores */
-    align-items: center;
-}
-
-.intro-text {
-    max-width: 800px; /* Ajuste a largura máxima conforme necessário */
-    text-align: left;
-    margin: 20px auto; /* Centralize o texto horizontalmente */
-   
-}
 .slider {
     margin: 0 auto;
-    width: 100%; /* Alterado para ocupar toda a largura */
-    max-width: 800px; /* Ajuste a largura máxima conforme necessário */
-    height: auto; /* Alterado para altura automática */
+    width: 100%; 
+    max-width: 800px; 
+    height: auto; 
     overflow: hidden;
 }
 
@@ -368,8 +299,8 @@ ul li a:hover{
 
 .quero-adotar {
     position: relative;
-    background-color: rgb(247, 187, 10); /* Cor de fundo dos botões */
-    color: #fff; /* Cor do texto nos botões */
+    background-color: rgb(247, 187, 10); 
+    color: #fff; 
     padding: 12px 25px;
     border: none;
     margin-left: 10px;
@@ -377,32 +308,32 @@ ul li a:hover{
     cursor: pointer;
     font-weight: bold;
     font-size: 20px;
-    text-decoration: none; /* Remova o sublinhado do link */
-    display: inline-block; /* Adicione essa propriedade para manter o botão em linha com o texto */
+    text-decoration: none;
+    display: inline-block; 
 }
 
 .quero-adotar::before {
-    content: '\2764'; /* Código Unicode do símbolo de coração */
+    content: '\2764';
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: transparent; /* Inicialmente, o coração é transparente */
-    font-size: 30px; /* Tamanho do coração */
-    opacity: 0; /* Inicialmente, o coração está totalmente transparente */
-    transition: opacity 0.5s, color 0.5s; /* Adiciona uma transição suave para a cor e opacidade */
+    color: transparent; 
+    font-size: 30px;
+    opacity: 0; 
+    transition: opacity 0.5s, color 0.5s; 
 }
 
 .quero-adotar:hover {
-    color: transparent; /* Quando o mouse passa sobre o botão, o texto fica transparente */
+    color: transparent; 
     background-color: red;
     font-size: 130%;
     border-radius: 30px;
 }
 
 .quero-adotar:hover::before {
-    color: #fff; /* Quando o mouse passa sobre o botão, o coração fica visível */
-    opacity: 1; /* Quando o mouse passa sobre o botão, o coração torna-se totalmente visível */
+    color: #fff; 
+    opacity: 1; 
 }
 
 /* Seção de Introdução */
@@ -413,19 +344,19 @@ ul li a:hover{
 
 .intro-content {
     display: flex;
-    flex-direction: column; /* Alterado para empilhar os elementos em telas menores */
+    flex-direction: column; 
     align-items: center;
 }
 
 .intro-text {
-    max-width: 800px; /* Ajuste a largura máxima conforme necessário */
+    max-width: 800px; 
     text-align: left;
-    margin: 20px auto; /* Centralize o texto horizontalmente */
+    margin: 20px auto; 
     position: relative;
     padding: 20px;
     border: 2px solid rgb(204, 192, 192);
     border-radius: 15px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
     background-image: linear-gradient(to bottom, #982649, #AE4147, #C76548);
     color: white;
 }
@@ -434,14 +365,12 @@ ul li a:hover{
     color: rgb(255, 255, 255);
     font-size: 30px;
     font-weight: 900;
-    line-height: 3px; /* tamanho da altura de cada linha */
-    letter-spacing: 1px; /* tamanho do espaço entre cada letra */
-    word-spacing: 4px; /* tamanho do espaço entre cada palavra */
-    text-align: center;/* tamanho da margem da primeira linha do texto */
+    line-height: 3px; 
+    letter-spacing: 1px; 
+    word-spacing: 4px; 
+    text-align: center;
 }
 
-
-/* Estilos para o Footer inspirado no think32.com.au */
 #footer-inspired {
     background-image: linear-gradient(to top, #982649, #AE4147, #C76548);
     color: #fff;
@@ -508,8 +437,8 @@ font-size: 1.7em;
 /*Página de adoção*/
 
 .adocao-titulo{
-    font-size: 30px;
-    color: rgb(247, 187, 10);
+    font-size: 33px;
+    color: rgb(189, 64, 102);
     letter-spacing: 1px;
 }
 
@@ -526,15 +455,15 @@ font-size: 1.7em;
 
 /* Adoção - Estilo das divisões e botão de adotar */
 .adoption-item {
-    box-sizing: border-box; /* Inclui a borda no cálculo do tamanho total */
-    width: calc(33.3333% - 20px); /* 33.3333% do width total, subtraindo a margem */
-    margin: 10px; /* Espaçamento entre as caixas */
+    box-sizing: border-box;
+    width: calc(33.3333% - 20px); 
+    margin: 10px; 
     border: 1px solid rgb(229, 196, 207);
     border-radius: 10px;
     padding: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    display: inline-block; /* Permite o alinhamento lado a lado */
-    vertical-align: top; /* Alinha no topo */
+    display: inline-block; 
+    vertical-align: top; 
     background-color: rgba(247, 188, 10, 0.067);
 }
 
@@ -556,7 +485,7 @@ font-size: 1.7em;
 
 @media only screen and (max-width: 767px) {
     .adoption-item {
-        width: 100%; /* Em telas menores, ocupa a largura total */
+        width: 100%; 
     }
 }
 
@@ -596,10 +525,9 @@ font-size: 1.7em;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full viewport height */
+    height: 100vh; 
 }
 
-/* Style for the registration box */
 .registration-box {
     max-width: 400px;
     width: 100%;
@@ -692,7 +620,7 @@ body{
     display: inline-block;
     margin: 0 10px;
     font-size: 24px;
-    color: #ffffff; /* Altere a cor conforme necessário */
+    color: #ffffff; 
 }
 
 .icones-redes-sociais a:hover {
@@ -759,38 +687,35 @@ font-size: 1.7em;
 }
 
 
-/* Adicionando estilos para tornar a seção responsiva */
+/* estilos para tornar a seção responsiva */
 @media only screen and (max-width: 767px) {
     #ajuda-solidaria {
-        padding: 20px; /* Ajuste o preenchimento conforme necessário para telas menores */
+        padding: 20px; 
     }
 
     .ajuda-container {
-        max-width: 100%; /* Ocupa toda a largura disponível em telas menores */
+        max-width: 100%; 
     }
 
     .ajuda-text {
-        margin-bottom: 10px; /* Ajuste a margem inferior conforme necessário em telas menores */
+        margin-bottom: 10px; 
     }
 
     .redes-sociais {
-        margin-top: 10px; /* Ajuste a margem superior conforme necessário em telas menores */
+        margin-top: 10px; 
     }
 }
 
-
-/* Adicione este estilo para a caixa centralizada */
-/* Adicione este estilo para a caixa centralizada */
 #quero-adotar {
     background-image: linear-gradient(to bottom, #982649, #AE4147, #C76548);
     padding: 20px;
     text-align: center;
     color: #ffffff;
     display: flex;
-    flex-direction: column; /* Alterado para alinhar itens verticalmente */
-    align-items: center; /* Alinha os itens no centro horizontalmente */
-    justify-content: center; /* Alinha os itens no centro verticalmente */
-    height: 100vh; /* Ocupa 100% da altura da viewport */
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh; 
 }
 .titulo-adotar{
         font-size: 90px;
@@ -830,7 +755,6 @@ font-size: 1.7em;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Adicione este estilo para o ícone do WhatsApp e o número de telefone */
 .whatsapp-info {
     display: flex;
     align-items: center;
