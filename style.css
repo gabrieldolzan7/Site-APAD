@@ -12,7 +12,7 @@
 .body-principal{
     margin: 0;
     padding: 0;
-    font-family: texto;
+    font-family: Arial, Helvetica, sans-serif;
     background-image: url(Imagens/fundo-sie4.png);
     background-size: 200px 200px; /* Ajusta o tamanho da imagem para cobrir toda a tela */
     background-position: center; /* Centraliza a imagem no meio da tela */
@@ -45,7 +45,7 @@
 body {  
     margin: 0;
     padding: 0;
-    font-family: 'texto';
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* Cabeçalho */
@@ -73,7 +73,7 @@ header {
 }
 
 .titulo h1 {
-    font-size: 90px;
+    font-size: 100px;
     margin: 0;
     font-family: 'titulo';
     margin-top: 10px;
@@ -582,7 +582,7 @@ font-size: 1.7em;
 }
 
 .titulo-voluntarios{
-    font-size: 90px;
+    font-size: 100px;
     margin: 0;
     font-family: 'titulo';
     margin-top: 10px;
@@ -802,6 +802,7 @@ font-size: 1.7em;
         text-align: center;
         background-color:#982649;
         color: white;
+        padding-top: 20px;
     }
     .adotar-container{
         max-width: 800px;
@@ -810,7 +811,7 @@ font-size: 1.7em;
     .adotar-text{
         margin-bottom: 20px;
         font-family: 'texto';
-        font-size: 20px;
+        font-size: 25px;
     }
 .central-box {
     max-width: 800px;
@@ -819,12 +820,6 @@ font-size: 1.7em;
 
 .central-box p {
     margin-bottom: 20px;
-}
-
-.icone-whatsapp {
-    font-size: 24px;
-    margin-right: 10px;
-    color: rgb(247, 187, 10);
 }
 
 .adoption-text {
